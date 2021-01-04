@@ -1,0 +1,219 @@
+// @import "../bootstrap-4.5.3/scss/bootstrap.scss";
+@import "./mixins";
+@import "./variables";
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-family: $main-font;
+}
+
+nav{
+    font-family: $main-font;
+}
+
+//Header
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(./Images/mountain-1245916_1920.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    div{
+        background-color: transparent;
+        animation: header 5s infinite alternate linear;
+        position: absolute;
+        top: 90px;
+        left: 30px;
+
+        @include desktop{
+            top: 110px;
+            left: 100px;
+        }
+
+        h1{
+            font-family: 'Bungee Outline', cursive;
+            font-size: 2.5em;
+
+            @include desktop{
+                font-size: 4.5rem;
+            }
+        }
+    }
+}
+
+@keyframes header {
+    from {
+        color: black;
+    }
+
+    to {
+        color: white;
+    }
+}
+
+//Section Projects
+#projects{
+    @include section;
+    position: relative;
+
+    h2{
+        @include h2;
+    }
+
+    .projects{
+        width: 80%;
+        height: 300px;
+        margin: 10px auto;
+
+        @include desktop{
+            margin: 150px auto 0;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }  
+}
+
+//Section About
+#about{
+    @include section;
+    background-color: rgb(219, 216, 216);
+    position: relative;
+
+    @include desktop{
+        height: 100vh;
+    }
+
+    h2{
+        @include h2;
+    }
+
+    div{
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+
+        @include desktop{
+            width: 60%;
+            margin-top: 70px;
+            display: flex;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            margin-bottom: 30px;
+            box-shadow: 0 0 2px black;
+
+            @include desktop{
+                width: 40%;
+                margin-right: 50px;
+            }
+        }
+
+        p{
+            text-align: justify;
+            font-family: $main-font;
+            
+
+            @include desktop{
+               align-self: center;
+            }
+        }
+    }
+}
+
+//Section Contact
+#contact{
+    @include section;
+    background-color: rgb(26, 25, 25);
+    position: relative;
+
+    @include desktop{
+        height: 100vh;
+    }
+
+    div{
+        width: 80%;
+        height: auto;
+        margin: 10px auto;
+
+        @include desktop{
+            width: 60%;
+        }
+        
+
+        h2, p{
+            text-align: center;
+            color: whitesmoke;
+            font-family: $main-font;
+        }
+
+        h2{
+            margin-top: 60px;
+        }
+
+        form{
+            border: solid white 2px;
+            box-shadow: 0 0 3px white;
+            padding-bottom: 50px;
+            font-family: $main-font;
+            position: relative;
+
+            label{
+                color: whitesmoke;
+            }
+
+            button{
+                position: absolute;
+                bottom: 2px;
+                margin-bottom: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+//Footer
+footer{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+
+    div{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    @include desktop{
+        width: 30%;
+    }
+
+        i{
+            color: black;
+            font-size: 1.8rem;
+            transition: 1s;
+        }
+
+        i:hover{
+             transform: scale(1.5);
+        }
+    }
+}
+

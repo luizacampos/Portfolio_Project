@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Jura:wght@300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;600&display=swap");
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  font-family: "Source Code Pro", monospace;
+}
+
+nav {
+  font-family: "Source Code Pro", monospace;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(./Images/mountain-1245916_1920.jpg);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header div {
+  background-color: transparent;
+  -webkit-animation: header 5s infinite alternate linear;
+          animation: header 5s infinite alternate linear;
+  position: absolute;
+  top: 90px;
+  left: 30px;
+}
+
+@media (min-width: 1024px) {
+  header div {
+    top: 110px;
+    left: 100px;
+  }
+}
+
+header div h1 {
+  font-family: 'Bungee Outline', cursive;
+  font-size: 2.5em;
+}
+
+@media (min-width: 1024px) {
+  header div h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@-webkit-keyframes header {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes header {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+#projects {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 70px;
+  position: relative;
+}
+
+#projects h2 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  text-align: center;
+  margin: 60px 0 20px;
+}
+
+#projects .projects {
+  width: 80%;
+  height: 300px;
+  margin: 10px auto;
+}
+
+@media (min-width: 1024px) {
+  #projects .projects {
+    margin: 150px auto 0;
+  }
+}
+
+#projects .projects img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#about {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 70px;
+  background-color: #dbd8d8;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  #about {
+    height: 100vh;
+  }
+}
+
+#about h2 {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  text-align: center;
+  margin: 60px 0 20px;
+}
+
+#about div {
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+}
+
+@media (min-width: 1024px) {
+  #about div {
+    width: 60%;
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+#about div img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+}
+
+@media (min-width: 1024px) {
+  #about div img {
+    width: 40%;
+    margin-right: 50px;
+  }
+}
+
+#about div p {
+  text-align: justify;
+  font-family: "Source Code Pro", monospace;
+}
+
+@media (min-width: 1024px) {
+  #about div p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+#contact {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 70px;
+  background-color: #1a1919;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  #contact {
+    height: 100vh;
+  }
+}
+
+#contact div {
+  width: 80%;
+  height: auto;
+  margin: 10px auto;
+}
+
+@media (min-width: 1024px) {
+  #contact div {
+    width: 60%;
+  }
+}
+
+#contact div h2, #contact div p {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Source Code Pro", monospace;
+}
+
+#contact div h2 {
+  margin-top: 60px;
+}
+
+#contact div form {
+  border: solid white 2px;
+  -webkit-box-shadow: 0 0 3px white;
+          box-shadow: 0 0 3px white;
+  padding-bottom: 50px;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+}
+
+#contact div form label {
+  color: whitesmoke;
+}
+
+#contact div form button {
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+}
+
+footer div {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+  footer div {
+    width: 30%;
+  }
+}
+
+footer div i {
+  color: black;
+  font-size: 1.8rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer div i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+/*# sourceMappingURL=style.css.map */
